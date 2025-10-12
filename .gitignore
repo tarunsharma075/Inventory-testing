@@ -1,0 +1,43 @@
+# ============ Unity Specific ============
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+[Aa]ssets/AssetStoreTools*
+sysinfo.txt
+*.booproj
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.swp
+*.tmp
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.opendb
+*.apk
+*.aab
+*.unitypackage
+*.db
+
+# ============ IDE / Editor ============
+
+.vs/
+.vscode/
+.idea/
+*.iml
+
+# ============ OS Files ============
+
+.DS_Store
+Thumbs.db
