@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a87ffc4cdd936a43be1169370ba5bae, type: 3}
-  m_Name: Cyber-Torque Converter
+  m_Name: Blue Energon
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 7fd016d823b988141b921b69f6f06082, type: 3}
-  BuyingPrice: 250
-  SellingPrice: 170
-  weight: 10
-  description: Converts stored kinetic energy into high-speed rotation. Used in flight-type
-    or racing Cybertronians.
-  quantity: 5
-  rarity: 2
-  name: Cyber-Torque Converter
-  type: 3
+  icon: {fileID: 21300000, guid: 57fb07a8d0d77354a9d6718677b27bbc, type: 3}
+  BuyingPrice: 150
+  SellingPrice: 100
+  weight: 5
+  description: The refined and stable energy source used by all Cybertronians. Primary
+    power fuel for transformation, weapons, and core systems.
+  quantity: 10
+  rarity: 0
+  name: Standard Energon
+  type: 1

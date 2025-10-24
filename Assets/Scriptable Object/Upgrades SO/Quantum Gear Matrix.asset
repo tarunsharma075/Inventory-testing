@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a87ffc4cdd936a43be1169370ba5bae, type: 3}
-  m_Name: Ion Drive Regulator
+  m_Name: Quantum Gear Matrix
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 7fd016d823b988141b921b69f6f06082, type: 3}
-  BuyingPrice: 350
-  SellingPrice: 240
-  weight: 12
-  description: Maintains a stable Energon flow within high-speed engines. Essential
-    for aerial and advanced vehicle modes.
-  quantity: 1
-  rarity: 3
-  name: Ion Drive Regulator
+  icon: {fileID: 21300000, guid: 30080040b3c58fc44ac6c46fe6b1feec, type: 3}
+  BuyingPrice: 500
+  SellingPrice: 330
+  weight: 15
+  description: A hyper-engineered system that synchronizes spark energy with movement.
+    Only elite Autobots use it.
+  quantity: 10
+  rarity: 0
+  name: Quantum Gear Matrix
   type: 3
