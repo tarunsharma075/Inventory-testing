@@ -18,12 +18,16 @@ public class ItemsSO : ScriptableObject
    
     public  string description;
    
-    public  float  quantity;
+    public  float  MaxQuanity;
    
     public  Rarity rarity;
 
     public string name;
 
     public ItemTypes type;
+
+    public IneventoryType inventoryType;
+
+    public float inventoryQuantity;
 
 }

@@ -11,28 +11,28 @@ public class InventoryManager : MonoBehaviour
 
 
 
-    private float  WeightCheker(float  itemWeight)
-    {
-        float newWeight= currentWeight + itemWeight;
-        if (newWeight < inventoryWeight) return -1;
-        currentWeight = newWeight;
-        return currentWeight;
+    //private float  WeightCheker(float  itemWeight)
+    //{
+    //    float newWeight= currentWeight + itemWeight;
+    //    if (newWeight < inventoryWeight) return -1;
+    //    currentWeight = newWeight;
+    //    return newWeight;
         
 
         
-    }
-    public void AddItem(float itemMoney, float itemWeight)
-    {
-        if(itemMoney<currentMoneyAmount&& (WeightCheker(itemWeight) < inventoryWeight))
-        {
-            Debug.Log("Item Added to Inventory");
+    //}
+    //public void AddItem(float itemMoney, float itemWeight)
+    //{
+    //    if(itemMoney<currentMoneyAmount&& (WeightCheker(itemWeight) < inventoryWeight))
+    //    {
+    //        Debug.Log("Item Added to Inventory");
 
-        }else if(itemMoney > currentMoneyAmount)
-        {
-            Debug.Log("Not enogh funds popup");
-        }else if((WeightCheker(itemWeight) > inventoryWeight))
-        {
-            Debug.Log("Not enogh space ");
-        }
-    }
+    //    }else if(itemMoney > currentMoneyAmount)
+    //    {
+    //        Debug.Log("Not enogh funds popup");
+    //    }else if((WeightCheker(itemWeight) > inventoryWeight))
+    //    {
+    //        Debug.Log("Not enogh space ");
+    //    }
+    //}
 }
