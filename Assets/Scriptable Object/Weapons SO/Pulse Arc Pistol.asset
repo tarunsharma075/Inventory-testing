@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 8
   description: Lightweight pistol that fires quick electric arcs. Used mostly by
     scouts and engineers.
-  quantity: 15
+  MaxQuanity: 79
   rarity: 1
   name: Pulse Arc Pistol
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 0

@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 25
   description: "A dagger forged from dark Energon \u2014 small in size, but its strike
     carries the power of oblivion itself"
-  quantity: 1
+  MaxQuanity: 11
   rarity: 3
   name: Obilivion dagger
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 0

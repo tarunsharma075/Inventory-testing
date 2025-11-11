@@ -45,12 +45,14 @@ public class GatherButtonmanager : MonoBehaviour, IPointerClickHandler
         GameObject newItem= Instantiate(items[Randomitem], gridLayoutGroup.transform);
         
 
-        GridItemIntialization newitems = newItem.GetComponent<GridItemIntialization>();
+        gridtem newitems = newItem.GetComponent<gridtem>();
+        UIManager.instance.setGridItem(newitems);
         ItemsSO newItemsPannel = newitems.GetItem();
         newItemsPannel.inventoryType = IneventoryType.InventoryPannel;
         newItemsPannel.inventoryQuantity += 1;
         newItemsPannel.MaxQuanity -= 1;
 
+        
         UIManager.instance.ChangeAmount(newItemsPannel.SellingPrice);    
 
     }

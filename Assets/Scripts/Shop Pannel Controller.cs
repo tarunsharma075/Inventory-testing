@@ -9,23 +9,21 @@ public class ShopPannelController : MonoBehaviour
     [SerializeField] GameObject WeaponPannel;
     [SerializeField] GameObject RelicsPannel;
 
-    private static ShopPannelController instance;
-    public static ShopPannelController ShopPannelInstance { get { return instance; } }
-
+   
 
     private GameObject currentActivePanel;
 
-    private void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
-    }
+    //private void Awake()
+    //{
+    //    if (instance != null && instance != this)
+    //    {
+    //        Destroy(this);
+    //    }
+    //    else
+    //    {
+    //        instance = this;
+    //    }
+    //}
     public void SetActivePannel(ItemTypes PannelName)
     {
         UpgradesPannel.SetActive(false);

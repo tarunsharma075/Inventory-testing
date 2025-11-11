@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 6
   description: 'Provides temporary bursts of extreme speed and agility. Burns out
     quickly, leaving systems overheated.  '
-  quantity: 5
+  MaxQuanity: 10
   rarity: 2
   name: Red Energon
   type: 1
+  inventoryType: 1
+  inventoryQuantity: 0

@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 12
   description: A broken piece of the divine Forge of Solus Prime. Can repair small
     Cybertronian structures and infuse them with Energon essence.
-  quantity: 1
+  MaxQuanity: -3
   rarity: 4
   name: Forge Of Solurs Prime
   type: 2
+  inventoryType: 0
+  inventoryQuantity: 0

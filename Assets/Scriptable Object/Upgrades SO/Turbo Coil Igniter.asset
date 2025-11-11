@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 7
   description: Core ignition part responsible for powering vehicle engines during
     transformation sequences. Boosts acceleration output.
-  quantity: 10
+  MaxQuanity: 58
   rarity: 0
   name: Turbo Coil Igniter
   type: 3
+  inventoryType: 0
+  inventoryQuantity: 0

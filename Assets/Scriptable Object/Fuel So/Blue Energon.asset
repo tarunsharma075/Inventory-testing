@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 5
   description: The refined and stable energy source used by all Cybertronians. Primary
     power fuel for transformation, weapons, and core systems.
-  quantity: 10
+  MaxQuanity: 40
   rarity: 0
   name: Standard Energon
   type: 1
+  inventoryType: 0
+  inventoryQuantity: 0

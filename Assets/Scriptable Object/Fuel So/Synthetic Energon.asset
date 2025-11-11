@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 6
   description: Artificially engineered energy source developed by Ratchet. Boosts
     power efficiency but causes instability with prolonged use.
-  quantity: 1
+  MaxQuanity: 6
   rarity: 3
   name: Synthetic Energon
   type: 1
+  inventoryType: 1
+  inventoryQuantity: 0

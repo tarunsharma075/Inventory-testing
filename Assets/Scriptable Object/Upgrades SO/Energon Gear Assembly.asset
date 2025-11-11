@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 5
   description: Basic rotating mechanism that converts Energon energy into torque.
     Used in ground-level transformation joints.
-  quantity: 15
+  MaxQuanity: 79
   rarity: 1
   name: Energon Gear Assembly
   type: 3
+  inventoryType: 0
+  inventoryQuantity: 0

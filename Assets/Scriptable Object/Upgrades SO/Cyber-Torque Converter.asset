@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 10
   description: Converts stored kinetic energy into high-speed rotation. Used in flight-type
     or racing Cybertronians.
-  quantity: 5
+  MaxQuanity: 33
   rarity: 2
   name: Cyber-Torque Converter
   type: 3
+  inventoryType: 0
+  inventoryQuantity: 0

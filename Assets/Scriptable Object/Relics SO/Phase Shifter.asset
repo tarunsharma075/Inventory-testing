@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 5
   description: A relic that lets its user phase through solid matter. Once used by
     Smokescreen to escape traps. Unstable in untrained hands
-  quantity: 1
+  MaxQuanity: 36
   rarity: 2
   name: Phase Shifter
   type: 2
+  inventoryType: 0
+  inventoryQuantity: 0

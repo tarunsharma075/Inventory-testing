@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 20
   description: An ancient freezing cannon that can halt even Cybersteel machines.
     Slow reload, huge power.
-  quantity: 3
+  MaxQuanity: 0
   rarity: 4
   name: Cryo Cannon
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 0

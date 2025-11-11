@@ -6,9 +6,10 @@ using UnityEngine.EventSystems;
 public class ItemPannelbuttonLogic : MonoBehaviour,IPointerClickHandler
 {
     [SerializeField] private ItemTypes itemName;
+    [SerializeField] private ShopPannelController ShopPannelInstance;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-       ShopPannelController.ShopPannelInstance.SetActivePannel(itemName);
+       ShopPannelInstance.SetActivePannel(itemName);
     }
 }

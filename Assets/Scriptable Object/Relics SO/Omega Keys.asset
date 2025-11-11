@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 6
   description: "A fragment of one of the four Omega Keys used to restore Cybertron\u2019s
     core. Radiates faint life energy."
-  quantity: 4
+  MaxQuanity: 36
   rarity: 2
   name: Omega Keys
   type: 2
+  inventoryType: 0
+  inventoryQuantity: 0

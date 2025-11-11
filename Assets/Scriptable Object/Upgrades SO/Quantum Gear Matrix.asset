@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 15
   description: A hyper-engineered system that synchronizes spark energy with movement.
     Only elite Autobots use it.
-  quantity: 10
+  MaxQuanity: 59
   rarity: 0
   name: Quantum Gear Matrix
   type: 3
+  inventoryType: 0
+  inventoryQuantity: 0

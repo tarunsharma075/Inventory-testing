@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class GridItemIntialization : MonoBehaviour, IPointerClickHandler
+public class gridtem : MonoBehaviour, IPointerClickHandler
 {
 
     [SerializeField]
@@ -18,6 +18,12 @@ public class GridItemIntialization : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject shopDetailsPannel;
     [SerializeField] private GameObject inventoryDetailsPannel;
 
+
+
+    public void Start()
+    {
+        UIManager.instance.setGridItem(this);
+    }
     void setImage()
     {
        image.sprite = item.icon;
@@ -30,60 +36,59 @@ public class GridItemIntialization : MonoBehaviour, IPointerClickHandler
             if (inventoryDetailsPannel.activeSelf)
             {
                 UIManager.instance.ShowInventoryDetails(item);
-                setImage();
-            }else if(!inventoryDetailsPannel.activeSelf&&shopDetailsPannel.activeSelf)
+            }
+            else if (shopDetailsPannel.activeSelf)
             {
                 shopDetailsPannel.SetActive(false);
                 inventoryDetailsPannel.SetActive(true);
                 UIManager.instance.ShowInventoryDetails(item);
-                setImage();
             }
             else
             {
                 inventoryDetailsPannel.SetActive(true);
                 UIManager.instance.ShowInventoryDetails(item);
-                setImage();
             }
 
+            sellButton.SetActive(true);
+            buyButton.SetActive(false);
+
+            setImage();
         }
         else if (item.inventoryType == IneventoryType.ShopPannel)
         {
-           if(!shopDetailsPannel.activeSelf && inventoryDetailsPannel.activeSelf)
+            if (inventoryDetailsPannel.activeSelf)
             {
                 inventoryDetailsPannel.SetActive(false);
                 shopDetailsPannel.SetActive(true);
                 UIManager.instance.ShowShopItemDetails(item);
-                setImage();
+                UIManager.instance.setGridItem(this);
             }
             else if (shopDetailsPannel.activeSelf)
             {
                 UIManager.instance.ShowShopItemDetails(item);
-                setImage();
+                UIManager.instance.setGridItem(this);
             }
-            else 
+            else
             {
                 shopDetailsPannel.SetActive(true);
                 UIManager.instance.ShowShopItemDetails(item);
-                setImage();
+                UIManager.instance.setGridItem(this);
             }
+
+           
+            buyButton.SetActive(true);
+            sellButton.SetActive(false);
+
+            setImage();
         }
 
-        if (item.inventoryType == IneventoryType.ShopPannel)
-        {
-            buyButton.SetActive(true);
-           
-        }
-        else if (item.inventoryType == IneventoryType.InventoryPannel)
-        {
-            sellButton.SetActive(true);
-           
-        }
     }
 
     public ItemsSO GetItem()
     {
         return item;
     }
+
 
 
   

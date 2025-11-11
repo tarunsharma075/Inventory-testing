@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class UIManager : MonoBehaviour
 
@@ -11,23 +12,31 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI weight;
     [SerializeField] private TextMeshProUGUI rarity;
     [SerializeField] private TextMeshProUGUI quantity;
-    [SerializeField] private Sprite image;
+     private Sprite image;
     [SerializeField] private TextMeshProUGUI name;
     [SerializeField] private TextMeshProUGUI type;
     public static UIManager instance;
     [SerializeField] TextMeshProUGUI MoneyAmount;
+    private   gridtem gridtem;
 
     //InventoryPannel
     [SerializeField] private TextMeshProUGUI sellingPrice;
     [SerializeField] private TextMeshProUGUI inventoryquantity;
 
+    //SellButton;
+
+    [SerializeField] private TextMeshProUGUI amountText;
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
+        if (instance != null && instance != this)
+        {
             Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     
 
@@ -43,6 +52,7 @@ public class UIManager : MonoBehaviour
         name.text = item.name;
         image = item.icon;
         type.text =  item.type.ToString();
+        
     }
 
 
@@ -73,7 +83,23 @@ public class UIManager : MonoBehaviour
 
     public void OnPlusClick()
     {
-        
+
+        Debug.Log("Plus Button Clicked");
+
+        ItemsSO currentItem = gridtem.GetItem();
+        float currentItemMaxQuantity = currentItem.MaxQuanity;
+        //Debug.Log(currentItemMaxQuantity.ToString());
+        float currentBuyingQuantity = 0;
+        if(currentBuyingQuantity >= currentItemMaxQuantity)
+        {
+            //playsound;
+        }else
+        {
+
+            currentBuyingQuantity += 1;
+            amountText.text = currentBuyingQuantity.ToString();
+
+        }
 
 
     }
@@ -83,5 +109,28 @@ public class UIManager : MonoBehaviour
     {
         sellingPrice.text = "Selling Price: " +" "+ item.SellingPrice;
         inventoryquantity.text = "Quantity: " + " " + item.inventoryQuantity;
+    }
+
+
+    public void  setGridItem(  gridtem currentItem)
+    {
+        gridtem = currentItem;
+    }
+
+
+    public  void OnClickSell()
+    {
+        if(amountText.text == "")
+        {
+            //playsound;
+        }
+        Debug.Log("Sell Button Clicked");
+        ItemsSO currentItem = gridtem.GetItem();
+        float currentItemPrice = currentItem.SellingPrice;
+        float  numberofitems = float.Parse(amountText.text);
+        MoneyAmount.text =  ( (float.Parse(MoneyAmount.text)+currentItemPrice * numberofitems).ToString());
+        currentItem.inventoryQuantity -= 1;
+        inventoryquantity.text = "Quantity: " + " " + currentItem.inventoryQuantity;
+
     }
 }

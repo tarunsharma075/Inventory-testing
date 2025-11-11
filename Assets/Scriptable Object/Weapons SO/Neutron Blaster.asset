@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 18
   description: A powerful heavy blaster that channels neutron pulses. High recoil
     but massive damage.
-  quantity: 1
+  MaxQuanity: 11
   rarity: 3
   name: Neutron Blaster
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 0

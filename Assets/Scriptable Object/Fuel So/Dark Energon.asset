@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 8
   description: The corrupted "Blood of Unicron." Grants immense destructive power,
     but risks Spark corruption and mental instability.
-  quantity: 2
+  MaxQuanity: 4
   rarity: 4
   name: Dark Energon
   type: 1
+  inventoryType: 0
+  inventoryQuantity: 0

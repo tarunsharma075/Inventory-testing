@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 10
   description: A short-range melee blade powered by refined Energon. Emits a focused
     plasma edge.
-  quantity: 5
+  MaxQuanity: 35
   rarity: 2
   name: Energon Blade
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 0

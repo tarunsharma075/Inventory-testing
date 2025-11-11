@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 12
   description: Maintains a stable Energon flow within high-speed engines. Essential
     for aerial and advanced vehicle modes.
-  quantity: 1
+  MaxQuanity: 11
   rarity: 3
   name: Ion Drive Regulator
   type: 3
+  inventoryType: 0
+  inventoryQuantity: 0

@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 12
   description: Standard issue Autobot plasma rifle. Fires rapid low-energy plasma
     bursts with decent accuracy.
-  quantity: 10
+  MaxQuanity: 59
   rarity: 0
   name: Plasma Blaster
   type: 0
+  inventoryType: 0
+  inventoryQuantity: 1

@@ -18,7 +18,9 @@ MonoBehaviour:
   weight: 320
   description: "A legendary blade forged by the first Primes. Channels the Matrix\u2019s
     power to cut through anything. Only the worthy may wield it.\u201D"
-  quantity: 1
+  MaxQuanity: 1
   rarity: 4
   name: Star Saber
   type: 2
+  inventoryType: 0
+  inventoryQuantity: 0
