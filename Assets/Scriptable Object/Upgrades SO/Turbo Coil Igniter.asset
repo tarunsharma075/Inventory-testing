@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a87ffc4cdd936a43be1169370ba5bae, type: 3}
+  m_Name: Turbo Coil Igniter
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 19c4b2b53b7facd43ac3bfb8e7f77435, type: 3}
+  BuyingPrice: 180
+  SellingPrice: 120
+  weight: 7
+  description: Core ignition part responsible for powering vehicle engines during
+    transformation sequences. Boosts acceleration output.
+  quantity: 10
+  rarity: 0
+  name: Turbo Coil Igniter
+  type: 3

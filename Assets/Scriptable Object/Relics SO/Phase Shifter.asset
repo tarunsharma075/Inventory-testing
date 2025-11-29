@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a87ffc4cdd936a43be1169370ba5bae, type: 3}
+  m_Name: Phase Shifter
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: db35302f4f052de4ba560e42b5b40f9b, type: 3}
+  BuyingPrice: 250
+  SellingPrice: 170
+  weight: 5
+  description: A relic that lets its user phase through solid matter. Once used by
+    Smokescreen to escape traps. Unstable in untrained hands
+  quantity: 1
+  rarity: 2
+  name: Phase Shifter
+  type: 2
